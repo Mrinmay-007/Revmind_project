@@ -1,5 +1,5 @@
 
-from pydantic import BaseModel           #type:ignore
+from pydantic import BaseModel           
 import textwrap
 from db import query,query_one
 

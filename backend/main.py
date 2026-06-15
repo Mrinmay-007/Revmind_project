@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # ============================
 
 from seed import seed_db
-from api_router import check,products,chat
+from api_router import check,products,chat,trends
 
 # ============================
 
@@ -40,6 +40,7 @@ def startup():
 app.include_router(check.router)
 app.include_router(products.router)
 app.include_router(chat.router)
+app.include_router(trends.router)
 
 
 

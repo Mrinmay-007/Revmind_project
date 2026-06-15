@@ -1,12 +1,12 @@
 
-from fastapi import APIRouter,HTTPException #type:ignore
+from fastapi import APIRouter,HTTPException 
 
 import os
 import textwrap
 import requests
 
 
-from dotenv import load_dotenv #type:ignore
+from dotenv import load_dotenv 
 
 load_dotenv()
 
