@@ -1,0 +1,80 @@
+/* ─── Reset & Base ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green-50:  #E1F5EE;
+  --green-100: #9FE1CB;
+  --green-200: #5DCAA5;
+  --green-400: #1D9E75;
+  --green-600: #0F6E56;
+  --green-800: #085041;
+  --green-900: #04342C;
+
+  --gray-50:  #F8F8F7;
+  --gray-100: #F1EFE8;
+  --gray-200: #D3D1C7;
+  --gray-300: #B4B2A9;
+  --gray-400: #888780;
+  --gray-600: #5F5E5A;
+  --gray-800: #2C2C2A;
+  --gray-900: #1A1A19;
+
+  --amber-50:  #FAEEDA;
+  --amber-400: #BA7517;
+  --amber-600: #854F0B;
+
+  --surface:       #FFFFFF;
+  --surface-2:     #F8F8F7;
+  --surface-3:     #F1EFE8;
+  --border:        rgba(0,0,0,0.08);
+  --border-strong: rgba(0,0,0,0.15);
+  --text-primary:  #1A1A19;
+  --text-secondary:#5F5E5A;
+  --text-muted:    #888780;
+  --accent:        #1D9E75;
+  --accent-light:  #E1F5EE;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface:       #1A1A19;
+    --surface-2:     #222221;
+    --surface-3:     #2C2C2A;
+    --border:        rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.15);
+    --text-primary:  #F1EFE8;
+    --text-secondary:#B4B2A9;
+    --text-muted:    #888780;
+    --accent-light:  rgba(29,158,117,0.15);
+  }
+}
+
+html { font-size: 15px; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--surface-2);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Scrollbar ────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--gray-200); border-radius: 99px; }
+
+/* ─── Focus ring ───────────────────────────────────────────────────── */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
