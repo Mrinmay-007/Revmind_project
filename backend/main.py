@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # ============================
 
-
+from seed import seed_db
 from api_router import check
 
 # ============================
@@ -23,6 +23,12 @@ app.add_middleware(
 )
 
 
+# ======================
+#  Database  helpers
+# ======================
+@app.on_event("startup")
+def startup():
+    seed_db()
 
 
     
