@@ -1,0 +1,44 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 28px 0;
+  height: 100vh;
+  max-width: 820px;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+.chatWrap {
+  flex: 1;
+  min-height: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  padding: 20px 22px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 16px 14px 0;
+  }
+}
