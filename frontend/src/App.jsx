@@ -6,7 +6,7 @@ import Layout from './components/Layout'
 
 
 import Products from './pages/Products'
-
+import Products from './pages/Chat'
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
       <Layout>
         <Routes>
          
-         
+          <Route path="/chat" element={<Chat />} />
            <Route path="/products" element={<Products />} />
            
         </Routes>
